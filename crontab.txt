@@ -1,0 +1,5 @@
+*/5 * * * *  /usr/bin/php -q /var/www/page/framework/cronjobs/crawler.cronjob.php >/dev/null 2>&1
+*/15 * * * * /usr/bin/php -q /var/www/page/framework/cronjobs/query.cronjob.php >/dev/null 2>&1
+*/15 * * * * /usr/bin/php -q /var/www/page/framework/cronjobs/bulk.cronjob.php >/dev/null 2>&1
+0 * * * *    /usr/bin/php -q /var/www/page/framework/cronjobs/checker.cronjob.php >/dev/null 2>&1
+0 * * * *    /usr/bin/php -q /var/www/page/framework/cronjobs/base.cronjob.php >/dev/null 2>&1
